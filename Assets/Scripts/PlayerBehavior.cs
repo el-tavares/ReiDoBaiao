@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
-
-    // Public pois sao variaveis temporarias para testes
     public bool preciseMovement = true;
+
+    [SerializeField] private float speed = 1f;
 
     private void FixedUpdate()
     {
