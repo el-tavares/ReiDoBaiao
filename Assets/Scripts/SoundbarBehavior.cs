@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SongbarBehavior : MonoBehaviour
+public class SoundbarBehavior : MonoBehaviour
 {
+    [SerializeField] private GameObject minigame;
     [SerializeField] private Scrollbar handlebar;
     [SerializeField] private Scrollbar hitbar;
     [SerializeField] private float speed = 1f;
@@ -13,6 +14,7 @@ public class SongbarBehavior : MonoBehaviour
     private bool bPressing;
     private bool bWasHit;
     private bool bOpenInput = true;
+    private int hitCount;
 
     private void Start()
     {
@@ -33,6 +35,11 @@ public class SongbarBehavior : MonoBehaviour
         }    
 
         if (Input.GetKeyUp(KeyCode.Space)) { bOpenInput = true; }  // Torna disponivel depois que solta a barra de espaco
+
+        if (hitCount > 4) 
+        { 
+            minigame.SetActive(false); 
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -42,6 +49,7 @@ public class SongbarBehavior : MonoBehaviour
             if (other.CompareTag("Hit") && bPressing)
             {   
                 Debug.Log("Acertou");
+                hitCount++;
                 hitbar.value = Random.Range(0f, 1f);    // Escolhe posicao randomica do hitbar
                 bOpenInput = false;                        // Fecha disponibilidade
                 bWasHit = true;                            // Fecha a checagem para garantir que rode esse metodo uma vez
