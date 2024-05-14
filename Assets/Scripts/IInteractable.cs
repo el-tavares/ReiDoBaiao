@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IInteractable
-{
-    void Interact() { }
+{  
+    void Interact() { }     // Metodo usado por itens interagiveis e metodo chamado pelo jogador
 }

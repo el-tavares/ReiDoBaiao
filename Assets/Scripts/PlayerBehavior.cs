@@ -8,6 +8,8 @@ public class PlayerBehavior : MonoBehaviour
 
     [SerializeField] private float speed = 1f;
 
+    private Collider other;
+
     private void FixedUpdate()
     {
         if (preciseMovement)    // Movimento preciso (sem aceleracao)
@@ -36,6 +38,36 @@ public class PlayerBehavior : MonoBehaviour
             float vertical = Input.GetAxis("Vertical");
 
             transform.Translate(new Vector3(horizontal, 0f, vertical) * speed * 1.3f * Time.deltaTime);
+        }
+    }
+
+    private void Update()
+    {
+        // Interage se existe outro objeto e pressionou 'E'
+        if (other != null && Input.GetKeyUp(KeyCode.E))
+        {
+            other.gameObject.GetComponent<IInteractable>().Interact();
+            other = null;
+        }        
+    }
+
+    private void OnTriggerEnter(Collider _other)
+    {
+        // Salva o outro objeto interagivel
+        if (_other.CompareTag("Interactable"))
+        {
+            Debug.Log("Jogador entrou");
+            other = _other;
+        }
+    }
+
+    private void OnTriggerExit(Collider _other)
+    {
+        // Descarta o objeto interagivel
+        if (_other.CompareTag("Interactable"))
+        {
+            Debug.Log("Jogador saiu");
+            other = null;
         }
     }
 }

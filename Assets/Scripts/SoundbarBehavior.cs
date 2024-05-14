@@ -37,8 +37,10 @@ public class SoundbarBehavior : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space)) { bOpenInput = true; }  // Torna disponivel depois que solta a barra de espaco
 
         if (hitCount > 4) 
-        { 
-            minigame.SetActive(false); 
+        {
+            Debug.Log("Emos expulsos");
+            minigame.SetActive(false);
+            hitCount = 0;
         }
     }
 
@@ -50,9 +52,9 @@ public class SoundbarBehavior : MonoBehaviour
             {   
                 Debug.Log("Acertou");
                 hitCount++;
-                hitbar.value = Random.Range(0f, 1f);    // Escolhe posicao randomica do hitbar
-                bOpenInput = false;                        // Fecha disponibilidade
-                bWasHit = true;                            // Fecha a checagem para garantir que rode esse metodo uma vez
+                hitbar.value = Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
+                bOpenInput = false;                         // Fecha disponibilidade
+                bWasHit = true;                             // Fecha a checagem para garantir que rode esse metodo uma vez
             }
         }    
     }
