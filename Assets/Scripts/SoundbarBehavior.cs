@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.UI;
 
 public class SoundbarBehavior : MonoBehaviour
 {
+    public static event Action<int> OnHit;  
+
     [SerializeField] private GameObject minigame;
     [SerializeField] private Scrollbar handlebar;
     [SerializeField] private Scrollbar hitbar;
@@ -18,7 +21,7 @@ public class SoundbarBehavior : MonoBehaviour
 
     private void Start()
     {
-        hitbar.value = Random.Range(0f, 1f);    // Escolhe posicao randomica do hitbar
+        hitbar.value = UnityEngine.Random.Range(0f, 1f);    // Escolhe posicao randomica do hitbar
     }
 
     private void Update()
@@ -52,7 +55,10 @@ public class SoundbarBehavior : MonoBehaviour
             {   
                 Debug.Log("Acertou");
                 hitCount++;
-                hitbar.value = Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
+                OnHit?.Invoke(hitCount);
+
+
+                hitbar.value = UnityEngine.Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
                 bOpenInput = false;                         // Fecha disponibilidade
                 bWasHit = true;                             // Fecha a checagem para garantir que rode esse metodo uma vez
             }
