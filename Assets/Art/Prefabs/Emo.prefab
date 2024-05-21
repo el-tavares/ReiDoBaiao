@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
   m_LocalPosition: {x: 0, y: 0.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1201002139065287382}
   m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.15416262, g: 0.12998396, b: 0.21698111, a: 1}
+  m_Sprite: {fileID: 1742653146, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 4880369053891414367}
   - component: {fileID: 7173465925076658612}
   - component: {fileID: 527768362843924483}
+  - component: {fileID: 2689158667407140956}
   m_Layer: 0
   m_Name: Emo
   m_TagString: Untagged
@@ -204,5 +205,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5d39b8166f1d740bae8a427b8f995c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterObject: {fileID: 11400000, guid: 2198b6cb102a0bf4aab6d101c69087d6, type: 2}
   soundArea: {fileID: 0}
+--- !u!114 &2689158667407140956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228296565203400843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87b7143c9a9a2e4b8e6037b4aeeb5ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterObject: {fileID: 11400000, guid: 2198b6cb102a0bf4aab6d101c69087d6, type: 2}
+  animationRate: 0.1

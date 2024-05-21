@@ -14,4 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Enzo
   type: 1
-  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  idleSprites:
+  - {fileID: 1216760701, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  walkLeftSprites:
+  - {fileID: 1216760701, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: -1637232280, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: 154142409, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: 583050545, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: 694944866, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: 1763976686, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: -1190253892, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: -800688798, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  walkRightSprites:
+  - {fileID: 1742653146, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: -2142919547, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 1544946303, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 1652714774, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 1127685411, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: -412866736, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 234619075, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 1743731636, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
