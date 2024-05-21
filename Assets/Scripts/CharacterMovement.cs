@@ -9,14 +9,22 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float animationRate = .04f;
 
     private NavMeshAgent agent;
+    private Rigidbody rigidbody_;
 
     private void Start()
     {
         // Defini valores iniciais
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
+        /*agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;*/
+
+        rigidbody_ = GetComponent<Rigidbody>();
 
         StartCoroutine(PlayAnimation());
+    }
+
+    private void Update()
+    {
+        Debug.Log(rigidbody_.velocity);
     }
 
     IEnumerator PlayAnimation()
@@ -37,8 +45,8 @@ public class CharacterMovement : MonoBehaviour
 
     private Sprite[] GetCurrentAnimation()
     {
-        if (agent.velocity.x > 0) { return characterObject.walkRightSprites; }
-        else if (agent.velocity.x < 0) { return characterObject.walkLeftSprites; }
+        if (rigidbody_.velocity.x > 0) { return characterObject.walkRightSprites; }
+        else if (rigidbody_.velocity.x < 0) { return characterObject.walkLeftSprites; }
         else { return characterObject.idleSprites; }
     }
 }

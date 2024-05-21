@@ -12,20 +12,6 @@ public class EmoBehavior : MonoBehaviour
     private float fleeDistance;
     private bool bFleeing;
 
-    private Animator animator;
-
-    private void Update()
-    {
-        if ( agent.velocity.x > 0 )
-        {
-            Debug.Log("Direita");
-        }
-        else if (agent.velocity.x < 0)
-        {
-            Debug.Log("Esquerda");
-        }
-    }
-
     private void Start()
     {
         // Defini valores iniciais
