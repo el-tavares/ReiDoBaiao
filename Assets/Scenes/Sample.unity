@@ -3270,6 +3270,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 874276015872069511, guid: d96f450930b6de147b71070fab9c059a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220423875634925242, guid: d96f450930b6de147b71070fab9c059a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732370451199028378, guid: d96f450930b6de147b71070fab9c059a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4753296473057902714, guid: d96f450930b6de147b71070fab9c059a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4
@@ -3330,6 +3342,14 @@ PrefabInstance:
     - target: {fileID: 240902607251547938, guid: 1fd8e4e634de8304f9cd0cac6092e350, type: 3}
       propertyPath: m_Name
       value: House_T2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803775245744293558, guid: 1fd8e4e634de8304f9cd0cac6092e350, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591904651318719457, guid: 1fd8e4e634de8304f9cd0cac6092e350, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8523215756328559236, guid: 1fd8e4e634de8304f9cd0cac6092e350, type: 3}
       propertyPath: m_LocalPosition.x

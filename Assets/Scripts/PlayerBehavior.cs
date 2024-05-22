@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerBehavior : MonoBehaviour
 
     private NavMeshAgent agent;
     private Collider other;
+    private List<Renderer> previousRenderers = new List<Renderer>();
 
     private void Start()
     {
@@ -25,7 +27,7 @@ public class PlayerBehavior : MonoBehaviour
             other = null;
         }
 
-        IsObjectInFront();
+        HandleObjectInFront();
     }
 
     private void FixedUpdate()
@@ -60,15 +62,60 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    private bool IsObjectInFront()
+    private void HandleObjectInFront()
     {
-        Debug.DrawRay(cam.position, this.transform.position - cam.position, Color.red);
+        // Reseta transparencia
+        foreach (var renderer in previousRenderers) { SetTransparency(renderer, 1f); }
+        previousRenderers.Clear();
 
-        RaycastHit hit;
-        if (Physics.Raycast(cam.position, this.transform.position - cam.position, out hit))
+        // Configura ponto final da linha
+        Vector3 yOffset = new Vector3(0, 1.5f, 0);
+        Vector3 direction = this.transform.position - cam.position + yOffset;
+
+        // Debug e hit do da linha
+        Debug.DrawRay(cam.position, direction, Color.red);
+        RaycastHit[] hits = Physics.RaycastAll(cam.position, direction);
+
+        // Coloca transparente para cada hit da linha caso objeto seja "escondivel"
+        foreach (var hit in hits)
         {
-            if (hit.collider.CompareTag("Hideable")) { return true; }
+            Renderer renderer = hit.collider.GetComponent<Renderer>();
+            if (renderer != null && hit.collider.CompareTag("Hideable"))
+            {
+                SetTransparency(renderer, 0f);
+                previousRenderers.Add(renderer);
+            }
         }
-        return false;
+    }
+
+    void SetTransparency(Renderer renderer, float alpha)
+    {
+        foreach (var mat in renderer.materials)
+        {
+            Color color = mat.color;
+            color.a = alpha;
+            mat.color = color;
+
+            if (alpha < 1.0f)
+            {
+                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                mat.SetInt("_ZWrite", 0);
+                mat.DisableKeyword("_ALPHATEST_ON");
+                mat.EnableKeyword("_ALPHABLEND_ON");
+                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                mat.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+            }
+            else
+            {
+                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
+                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
+                mat.SetInt("_ZWrite", 1);
+                mat.DisableKeyword("_ALPHATEST_ON");
+                mat.DisableKeyword("_ALPHABLEND_ON");
+                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                mat.renderQueue = -1;
+            }
+        }
     }
 }
