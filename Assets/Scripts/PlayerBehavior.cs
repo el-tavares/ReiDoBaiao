@@ -1,46 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    public bool preciseMovement = true;
-
-    [SerializeField] private float speed = 1f;
-
+    private NavMeshAgent agent;
     private Collider other;
 
-    private void FixedUpdate()
+    private void Start()
     {
-        if (preciseMovement)    // Movimento preciso (sem aceleracao)
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                transform.Translate(Vector3.back * speed * Time.deltaTime);
-            }
-
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(Vector3.left * speed * Time.deltaTime);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(Vector3.right * speed * Time.deltaTime);
-            }
-        }
-        else    // Movimento suave (com aceleracao)
-        {
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
-
-            transform.Translate(new Vector3(horizontal, 0f, vertical) * speed * 1.3f * Time.deltaTime);
-        }
+        // Defini agent navmesh
+        agent = GetComponent<NavMeshAgent>();        
     }
-
     private void Update()
     {
         // Interage se existe outro objeto e pressionou 'E'
@@ -49,6 +21,24 @@ public class PlayerBehavior : MonoBehaviour
             other.gameObject.GetComponent<IInteractable>().Interact();
             other = null;
         }        
+    }
+
+    private void FixedUpdate()
+    {
+        // Seta destino do agent com base na direcao do input
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        Vector3 direction = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        Vector3 position = this.transform.position + direction;   
+        
+        agent.SetDestination(position);     
+    }
+
+    private bool InDestination()
+    {
+        // Retorna verdade se distancia que falta for menor que a distancia de parar e se nao ja tiver caminho a percorrer
+        return agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending;
     }
 
     private void OnTriggerEnter(Collider _other)

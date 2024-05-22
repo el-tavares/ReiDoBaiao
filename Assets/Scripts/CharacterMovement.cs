@@ -6,33 +6,24 @@ using UnityEngine.AI;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] CharacterObject characterObject;
-    [SerializeField] float animationRate = .04f;
+    [SerializeField] float animationRate = .1f;
 
     private NavMeshAgent agent;
-    private Vector3 velocity;
-    private Vector3 previousPosition;
 
     private void Start()
     {
-        // Defini valores iniciais
+        // Defini agent e desabilita rotacao
         agent = GetComponent<NavMeshAgent>();
-        if (agent != null) { agent.updateRotation = false; } 
-
-        previousPosition = this.transform.position;
+        if (agent != null) { agent.updateRotation = false; }
 
         StartCoroutine(PlayAnimation());
-    }
-
-    private void Update()
-    {
-        velocity = (this.transform.position - previousPosition) / Time.deltaTime;
-        previousPosition = this.transform.position;
     }
 
     IEnumerator PlayAnimation()
     {
         Sprite[] currentAnimation = GetCurrentAnimation();
 
+        // Roda todos os sprites da animacao
         for (int i = 0; i < currentAnimation.Length; i++)
         {
             this.GetComponentInChildren<SpriteRenderer>().sprite = currentAnimation[i];
@@ -47,17 +38,8 @@ public class CharacterMovement : MonoBehaviour
 
     private Sprite[] GetCurrentAnimation()
     {
-        if (agent != null)
-        {
-            if (velocity.x > 0 || velocity.y > 0) { return characterObject.walkRightSprites; }
-            else if (velocity.x < 0 || velocity.y < 0) { return characterObject.walkLeftSprites; }
-            else { return characterObject.idleSprites; }
-        }
-        else
-        {
-            if (agent.velocity.x > 0 || velocity.y > 0) { return characterObject.walkRightSprites; }
-            else if (agent.velocity.x < 0 || velocity.y < 0) { return characterObject.walkLeftSprites; }
-            else { return characterObject.idleSprites; }
-        }
+        if (agent.velocity.x > 0 || agent.velocity.z < 0) { return characterObject.walkRightSprites; }
+        else if (agent.velocity.x < 0 || agent.velocity.z > 0) { return characterObject.walkLeftSprites; }
+        else { return characterObject.idleSprites; }
     }
 }

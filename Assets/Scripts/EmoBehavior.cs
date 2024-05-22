@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class EmoBehavior : MonoBehaviour
 {
-    [SerializeField] private Collider soundArea;
+    [SerializeField] private Transform soundbox;
+    [SerializeField] private Transform player;
 
     private NavMeshAgent agent;
-    private Transform player;
     private float fleeDistance;
     private bool bFleeing;
 
@@ -18,46 +18,50 @@ public class EmoBehavior : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-
         StartCoroutine(MoveInsideArea());
     }
 
     private IEnumerator MoveInsideArea()
     {
-        Vector3 destination = Vector3.zero;
-
-        // Procura novo destino diferente de 0
-        while (destination == Vector3.zero)
+        while (!bFleeing)
         {
-            Debug.Log("Emo procurando destino");
-            destination = GetRandomPointInArea(soundArea);
+            agent.SetDestination(GetRandomPointInArea(soundbox.position, 5f, false));
+            Debug.Log("Achou ponto de patrulha");
+            while (!InDestination()) { yield return null; }
+            
+            yield return new WaitForSeconds(2f);
         }
-
-        agent.SetDestination(destination);
-
-        while (!InDestination()) { yield return null; }
-
-        yield return new WaitForSeconds(2f);
-
-        if (!bFleeing) { StartCoroutine(MoveInsideArea()); }
+        Debug.Log("Parou de patrulhar");
     }
 
-    private Vector3 GetRandomPointInArea(Collider area)
+    private Vector3 GetRandomPointInArea(Vector3 position, float offset, bool oposite)
     {
-        Bounds bounds = area.bounds;
+        if (oposite)
+        {          
+            Vector3 opositeDirection = (this.transform.position - position).normalized;
+            position = this.transform.position + opositeDirection * offset;
+            agent.speed *= 2f;
+        }
 
-        // Defini valores randomicos entre as extremidades da area
-        float randX = Random.Range(bounds.min.x, bounds.max.x);
-        float randZ = Random.Range(bounds.min.z, bounds.max.z);
-        float centerY = bounds.center.y;
+        Vector3 randomPoint = GetRandomPoint(position, offset);
+        NavMeshHit hit;    
+        
+        // Procura posicao dentro do navmesh
+        while (!NavMesh.SamplePosition(randomPoint, out hit, 1f, NavMesh.AllAreas)) 
+        {
+            randomPoint = GetRandomPoint(position, offset);
+        }
 
-        Vector3 randomPoint = new Vector3(randX, centerY, randZ);
+        return hit.position; 
+    }
 
-        // Retorna a posicao se for dentro do navmesh
-        if (NavMesh.SamplePosition(randomPoint, out NavMeshHit hit, 1.0f, NavMesh.AllAreas)) { return hit.position; }
+    private Vector3 GetRandomPoint(Vector3 position, float offset)
+    {
+        // Retorna ponto randomico dentro dos limites
+        float randX = Random.Range(position.x - offset, position.x + offset);
+        float randZ = Random.Range(position.z - offset, position.z + offset);
 
-        return Vector3.zero;
+        return new Vector3(randX, 0f, randZ);
     }
 
     private bool InDestination()
@@ -78,6 +82,7 @@ public class EmoBehavior : MonoBehaviour
 
     private void Flee(int hitCount)
     {   
+        // Foge ate distancia baseada no contador de acertos
         bFleeing = true;
         fleeDistance = hitCount;
         StartCoroutine(FleeFromPlayer());
@@ -88,38 +93,17 @@ public class EmoBehavior : MonoBehaviour
         while (bFleeing)
         {
             Vector3 destination;
-
             float distance = Vector3.Distance(this.transform.position, player.position);
 
             // Define destino de fuga se tiver proximo do jogador
-            if (distance < fleeDistance / 2f) 
-            { 
-                destination = GetFleePoint(player.position, fleeDistance); 
-                Debug.Log("Emo fugindo"); 
-            }
-            else 
-            { 
-                destination = GetRandomPointInArea(soundArea); 
-                Debug.Log("Emo voltando"); 
-            }
+            if (distance < 2f * fleeDistance) { destination = GetRandomPointInArea(player.position, 1.5f * fleeDistance, true); }
+            else { destination = GetRandomPointInArea(soundbox.position, 2.5f * fleeDistance, false); }
 
             agent.SetDestination(destination);
-
+            Debug.Log("Achou ponto de fuga");
             while (!InDestination()) { yield return null; }
 
             yield return new WaitForSeconds(1f);
         }
-    }
-
-    private Vector3 GetFleePoint(Vector3 fleeSource, float fleeDistance)
-    {
-        // Defini direcao oposta ao jogador e a posicao de fuga
-        Vector3 fleeDirection = (this.transform.position - fleeSource).normalized;
-        Vector3 fleePosition = this.transform.position + fleeDirection;
-
-        // Retorna a posicao de fuga se for dentro do navmesh
-        if (NavMesh.SamplePosition(fleePosition, out NavMeshHit hit, fleeDistance, NavMesh.AllAreas)) { return hit.position; }
-
-        return this.transform.position;
     }
 }

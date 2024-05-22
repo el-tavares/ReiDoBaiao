@@ -6,18 +6,14 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] CharacterObject characterObject;
-    [SerializeField] float animationRate = .04f;
+    [SerializeField] float animationRate = .1f;
 
-    private NavMeshAgent agent;
     private Vector3 velocity;
     private Vector3 previousPosition;
 
     private void Start()
     {
         // Defini valores iniciais
-        agent = GetComponent<NavMeshAgent>();
-        if (agent != null) { agent.updateRotation = false; } 
-
         previousPosition = this.transform.position;
 
         StartCoroutine(PlayAnimation());
@@ -27,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         velocity = (this.transform.position - previousPosition) / Time.deltaTime;
         previousPosition = this.transform.position;
+
+        
     }
 
     IEnumerator PlayAnimation()
@@ -38,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             this.GetComponentInChildren<SpriteRenderer>().sprite = currentAnimation[i];
 
             currentAnimation = GetCurrentAnimation();
-
+            
             yield return new WaitForSeconds(animationRate);
         }
 
@@ -47,17 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Sprite[] GetCurrentAnimation()
     {
-        if (agent != null)
-        {
-            if (velocity.x > 0 || velocity.y > 0) { return characterObject.walkRightSprites; }
-            else if (velocity.x < 0 || velocity.y < 0) { return characterObject.walkLeftSprites; }
-            else { return characterObject.idleSprites; }
-        }
-        else
-        {
-            if (agent.velocity.x > 0 || velocity.y > 0) { return characterObject.walkRightSprites; }
-            else if (agent.velocity.x < 0 || velocity.y < 0) { return characterObject.walkLeftSprites; }
-            else { return characterObject.idleSprites; }
-        }
+        if (velocity.x > 0 || velocity.y > 0) { return characterObject.walkRightSprites; }
+        else if (velocity.x < 0 || velocity.y < 0) { return characterObject.walkLeftSprites; }
+        else { return characterObject.idleSprites; }
     }
 }
