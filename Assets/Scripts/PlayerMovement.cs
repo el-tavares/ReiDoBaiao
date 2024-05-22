@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CharacterMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] CharacterObject characterObject;
     [SerializeField] float animationRate = .04f;

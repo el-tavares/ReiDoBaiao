@@ -2198,9 +2198,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 2689158667407140956, guid: b7383f9c86f02b74dad10327d24617e2, type: 3}
+      propertyPath: animationRate
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 3228296565203400843, guid: b7383f9c86f02b74dad10327d24617e2, type: 3}
       propertyPath: m_Name
       value: Emo (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228296565203400843, guid: b7383f9c86f02b74dad10327d24617e2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4880369053891414367, guid: b7383f9c86f02b74dad10327d24617e2, type: 3}
       propertyPath: m_Height
