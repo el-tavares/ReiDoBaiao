@@ -26,7 +26,7 @@ public class PlayerBehavior : MonoBehaviour
             other = null;
         }
 
-        HandleObjectInFront(Time.deltaTime);
+        HandleObjectInFront();
     }
 
     private void FixedUpdate()
@@ -61,7 +61,7 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    private void HandleObjectInFront(float timeDelta)
+    private void HandleObjectInFront()
     {
         // Reseta transparencia
         foreach (var renderer in previousRenderers) { SetTransparency(renderer, 1f); }
