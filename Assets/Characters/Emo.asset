@@ -38,3 +38,9 @@ MonoBehaviour:
   - {fileID: -412866736, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
   - {fileID: 234619075, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
   - {fileID: 1743731636, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  deathExolosionSprites:
+  - {fileID: -2003505483, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1721986559, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1060592388, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1733611459, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: 6483895, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}

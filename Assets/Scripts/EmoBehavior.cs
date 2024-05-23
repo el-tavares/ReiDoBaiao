@@ -11,12 +11,15 @@ public class EmoBehavior : MonoBehaviour
     private NavMeshAgent agent;
     private float fleeDistance;
     private bool bFleeing;
+    private CharacterMovement characterMovement;
 
     private void Start()
     {
         // Defini valores iniciais
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
+
+        characterMovement = GetComponent<CharacterMovement>();
 
         StartCoroutine(MoveInsideArea());
     }
@@ -87,6 +90,7 @@ public class EmoBehavior : MonoBehaviour
         // Foge ate distancia baseada no contador de acertos
         bFleeing = true;
         fleeDistance = hitCount;
+        if (hitCount > 4) { characterMovement.SetDead(); }
         StartCoroutine(FleeFromPlayer());
     }
 

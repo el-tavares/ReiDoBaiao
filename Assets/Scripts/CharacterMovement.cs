@@ -9,6 +9,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float animationRate = .1f;
 
     private NavMeshAgent agent;
+    private bool bDead;
 
     private void Start()
     {
@@ -40,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
 
     private Sprite[] GetCurrentAnimation()
     {
+        if (bDead) { return characterObject.deathExolosionSprites; }
         if (agent.velocity.x > 0 || agent.velocity.z < 0) { return characterObject.walkRightSprites; }
         else if (agent.velocity.x < 0 || agent.velocity.z > 0) { return characterObject.walkLeftSprites; }
         else { return characterObject.idleSprites; }
@@ -48,5 +50,17 @@ public class CharacterMovement : MonoBehaviour
     private void OnDisable()
     {
         StopAllCoroutines();
+    }
+
+    public void SetDead()
+    { 
+        bDead = true; 
+        agent.isStopped = true;
+        Invoke("Die", 1f);
+    }
+
+    private void Die()
+    {
+        Destroy(this.gameObject);
     }
 }
