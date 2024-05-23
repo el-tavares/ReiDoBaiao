@@ -32,8 +32,8 @@ public class CharacterMovement : MonoBehaviour
 
             currentAnimation = GetCurrentAnimation();
 
-            if (currentFrame < currentAnimation.Length - 1) { currentFrame++; }
-            else { currentFrame = 0; }
+            // A operacao modulo (%) e usada para "enrolar" o indice de volta para 0 quando ele atinge o final da sequencia de frames da animacao
+            currentFrame = (currentFrame + 1) % currentAnimation.Length;
 
             yield return new WaitForSeconds(animationRate);
         }
