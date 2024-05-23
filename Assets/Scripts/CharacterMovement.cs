@@ -22,18 +22,20 @@ public class CharacterMovement : MonoBehaviour
     IEnumerator PlayAnimation()
     {
         Sprite[] currentAnimation = GetCurrentAnimation();
+        int currentFrame = 0;
 
-        // Roda todos os sprites da animacao
-        for (int i = 0; i < currentAnimation.Length; i++)
+        // Atualiza o frame da animacao enquanto checa a animacao
+        while (true)
         {
-            this.GetComponentInChildren<SpriteRenderer>().sprite = currentAnimation[i];
+            this.GetComponentInChildren<SpriteRenderer>().sprite = currentAnimation[currentFrame];
 
             currentAnimation = GetCurrentAnimation();
 
+            if (currentFrame < currentAnimation.Length - 1) { currentFrame++; }
+            else { currentFrame = 0; }
+
             yield return new WaitForSeconds(animationRate);
         }
-
-        StartCoroutine(PlayAnimation());
     }
 
     private Sprite[] GetCurrentAnimation()
@@ -41,5 +43,10 @@ public class CharacterMovement : MonoBehaviour
         if (agent.velocity.x > 0 || agent.velocity.z < 0) { return characterObject.walkRightSprites; }
         else if (agent.velocity.x < 0 || agent.velocity.z > 0) { return characterObject.walkLeftSprites; }
         else { return characterObject.idleSprites; }
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }

@@ -26,7 +26,7 @@ public class PlayerBehavior : MonoBehaviour
             other = null;
         }
 
-        HandleObjectInFront();
+        HandleObjectInFront(Time.deltaTime);
     }
 
     private void FixedUpdate()
@@ -61,7 +61,7 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    private void HandleObjectInFront()
+    private void HandleObjectInFront(float timeDelta)
     {
         // Reseta transparencia
         foreach (var renderer in previousRenderers) { SetTransparency(renderer, 1f); }
@@ -89,31 +89,50 @@ public class PlayerBehavior : MonoBehaviour
 
     void SetTransparency(Renderer renderer, float alpha)
     {
-        foreach (var mat in renderer.materials)
+        foreach (var material in renderer.materials)
         {
-            Color color = mat.color;
+            Color color = material.color;
             color.a = alpha;
-            mat.color = color;
+            material.color = color;
 
             if (alpha < 1.0f)
             {
-                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                mat.SetInt("_ZWrite", 0);
-                mat.DisableKeyword("_ALPHATEST_ON");
-                mat.EnableKeyword("_ALPHABLEND_ON");
-                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                mat.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+                material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                material.SetInt("_ZWrite", 0);
+                material.SetInt("_Surface", 1);
+
+                material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+
+                material.SetShaderPassEnabled("DepthOnly", false);
+                material.SetShaderPassEnabled("SHADOWCASTER", true);
+
+                material.SetOverrideTag("RenderType", "Transparent");
+
+                //material.DisableKeyword("_ALPHATEST_ON");
+                //material.EnableKeyword("_ALPHABLEND_ON");   // Totalmente transparente
+                material.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+                material.EnableKeyword("_ALPHAPREMULTIPLY_ON");
+
             }
             else
             {
-                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
-                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
-                mat.SetInt("_ZWrite", 1);
-                mat.DisableKeyword("_ALPHATEST_ON");
-                mat.DisableKeyword("_ALPHABLEND_ON");
-                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                mat.renderQueue = -1;
+                material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
+                material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
+                material.SetInt("_ZWrite", 1);
+                material.SetInt("_Surface", 0);
+
+                material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Geometry;
+
+                material.SetShaderPassEnabled("DepthOnly", true);
+                material.SetShaderPassEnabled("SHADOWCASTER", true);
+
+                material.SetOverrideTag("RenderType", "Opaque");
+
+                //material.DisableKeyword("_ALPHATEST_ON");
+                //material.DisableKeyword("_ALPHABLEND_ON");
+                material.DisableKeyword("_SURFACE_TYPE_TRANSPARENT");
+                material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
             }
         }
     }

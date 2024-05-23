@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3be32db6c3e9c44b25f4022968baa5, type: 3}
   m_Name: Emo
   m_EditorClassIdentifier: 
-  fullName: Enzo
-  type: 1
   idleSprites:
-  - {fileID: 1216760701, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  - {fileID: -484653799, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: -419078099, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: 2084174516, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: 614763359, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: 238290818, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: -1320321137, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
+  - {fileID: 93037696, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
   walkLeftSprites:
   - {fileID: 1216760701, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
   - {fileID: -1637232280, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}

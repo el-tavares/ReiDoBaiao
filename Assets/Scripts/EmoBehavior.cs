@@ -36,12 +36,14 @@ public class EmoBehavior : MonoBehaviour
 
     private Vector3 GetRandomPointInArea(Vector3 position, float offset, bool oposite)
     {
+        // Troca a direcao e velocidade se estiver fugindo
         if (oposite)
         {          
             Vector3 opositeDirection = (this.transform.position - position).normalized;
             position = this.transform.position + opositeDirection * offset;
-            agent.speed *= 2f;
+            agent.speed = 4f;
         }
+        else { agent.speed = 2f; }
 
         Vector3 randomPoint = GetRandomPoint(position, offset);
         NavMeshHit hit;    
