@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float timer = 0f;
+
+    private void Start()
     {
-        
+        StartCoroutine(Timer());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator Timer()
     {
-        
+        while (true)
+        {
+            Debug.Log(timer);
+            yield return new WaitForSeconds(1f);
+            timer++;            
+        }        
     }
 }

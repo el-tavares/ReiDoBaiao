@@ -85,6 +85,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9dcd2c8326d42d9429a827fe6601d90c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: c0f786f665c7284429d51ef0e686581d, type: 3}
     - target: {fileID: 919132149155446097, guid: 9dcd2c8326d42d9429a827fe6601d90c, type: 3}
       propertyPath: m_Name
       value: c1_parede_esquerda
@@ -180,6 +184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f5d82ef38c483504b8c4581a1e18c711, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: c0f786f665c7284429d51ef0e686581d, type: 3}
     - target: {fileID: 919132149155446097, guid: f5d82ef38c483504b8c4581a1e18c711, type: 3}
       propertyPath: m_Name
       value: c1_teto
@@ -275,6 +283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c78ddb24602a8754182c757576216663, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: c0f786f665c7284429d51ef0e686581d, type: 3}
     - target: {fileID: 919132149155446097, guid: c78ddb24602a8754182c757576216663, type: 3}
       propertyPath: m_Name
       value: c1_frontal
@@ -370,6 +382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5a1100b67287b4f439b4cc30b6106692, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: c0f786f665c7284429d51ef0e686581d, type: 3}
     - target: {fileID: 919132149155446097, guid: 5a1100b67287b4f439b4cc30b6106692, type: 3}
       propertyPath: m_Name
       value: c1_fundo
@@ -527,6 +543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a743491b2d5e785488275aaeac328a83, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: c0f786f665c7284429d51ef0e686581d, type: 3}
     - target: {fileID: 919132149155446097, guid: a743491b2d5e785488275aaeac328a83, type: 3}
       propertyPath: m_Name
       value: c1_parede_direita

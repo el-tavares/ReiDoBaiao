@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.3807401, b: 0.358727, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -285,6 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabe37422818242f1bc748e9effbcdf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endSprites:
+  - {fileID: 1742653146, guid: c543c2a5418fa8a448aa5393b58c0abe, type: 3}
+  - {fileID: 1216760701, guid: 06467cb6896e933489e53f62d69b48ad, type: 3}
+  endImage: {fileID: 2036867580}
 --- !u!4 &531868515
 Transform:
   m_ObjectHideFlags: 0
@@ -609,8 +613,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036867579}
-  - {fileID: 267809533}
   - {fileID: 558953976}
+  - {fileID: 267809533}
   - {fileID: 1074496215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
