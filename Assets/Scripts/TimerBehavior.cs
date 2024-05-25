@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.UI;
 
 public class TimerBehavior : MonoBehaviour
 {
+    public static event Action<bool> OnTimeEnded;
+
     [SerializeField] private Sprite[] timerSprites = new Sprite[6];
     [SerializeField] private float startTimer = 600;
 
@@ -12,7 +15,7 @@ public class TimerBehavior : MonoBehaviour
 
     private void Start()
     {
-        // Inicializar temporizador
+        // Inicializa temporizador
         currentTimer = startTimer;
         StartCoroutine(Timer());
     }
@@ -29,7 +32,7 @@ public class TimerBehavior : MonoBehaviour
             currentTimer--;
         }
 
-        Debug.Log("CABOOOU O TEMPO!");
+        OnTimeEnded?.Invoke(true);
     }
 
     private Sprite GetSpriteByTime(float percentage)

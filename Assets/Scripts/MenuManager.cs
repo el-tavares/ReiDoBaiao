@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Sprite[] endSprites;
     [SerializeField] private Image endImage;
 
-    private bool bIsBadEnd;
+    public static bool bIsBadEnd;
 
     private void Start()
     {
@@ -20,9 +20,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void SetBadEnd(bool isBadEnd) { bIsBadEnd = isBadEnd; }
-
-    public void LoadScene(string sceneName)
+    public static void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
