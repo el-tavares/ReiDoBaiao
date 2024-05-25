@@ -39,20 +39,12 @@ public class PlayerBehavior : MonoBehaviour
     private void OnTriggerEnter(Collider _other)
     {
         // Salva o outro objeto interagivel
-        if (_other.CompareTag("Interactable"))
-        {
-            Debug.Log("Jogador entrou");
-            other = _other;
-        }
+        if (_other.CompareTag("Interactable")) { other = _other; }
     }
 
     private void OnTriggerExit(Collider _other)
     {
         // Descarta o objeto interagivel
-        if (_other.CompareTag("Interactable"))
-        {
-            Debug.Log("Jogador saiu");
-            other = null;
-        }
+        if (_other.CompareTag("Interactable")) { other = null; }
     }
 }

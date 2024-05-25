@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class SoundboxBehavior : MonoBehaviour, IInteractable
 {
+    [SerializeField] private int index;
     [SerializeField] private GameObject minigame;
+
+
+    [HideInInspector] public int interactedIndex;
 
     public void Interact()  // IInteractable
     {
-        Debug.Log("Minigame comecou");
+        this.interactedIndex = this.index;
         minigame.SetActive(true); 
         GetComponent<SphereCollider>().enabled = false;       
     }

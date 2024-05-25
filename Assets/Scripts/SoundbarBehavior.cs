@@ -44,6 +44,7 @@ public class SoundbarBehavior : MonoBehaviour
             Debug.Log("Emos expulsos");
             minigame.SetActive(false);
             hitCount = 0;
+            bOpenInput = true;
         }
     }
 
@@ -53,10 +54,8 @@ public class SoundbarBehavior : MonoBehaviour
         {
             if (other.CompareTag("Hit") && bPressing)
             {   
-                Debug.Log("Acertou");
                 hitCount++;
                 OnHit?.Invoke(hitCount);
-
 
                 hitbar.value = UnityEngine.Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
                 bOpenInput = false;                         // Fecha disponibilidade
