@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3be32db6c3e9c44b25f4022968baa5, type: 3}
+  m_Name: Emo 2
+  m_EditorClassIdentifier: 
+  idleSprites:
+  - {fileID: 1446218789, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: -1772746796, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: 1672148104, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: -1674388239, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: 830402644, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: -834539057, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: 45959125, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  - {fileID: 2138593644, guid: 0d84e6275ea578046aca84a6d060064d, type: 3}
+  walkLeftSprites:
+  - {fileID: -1658996142, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: -2103334421, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: -1120811093, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: -555174218, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: 2128620626, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: -873621118, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: 1867652497, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  - {fileID: 1196469997, guid: ebc76f0438567904d854610f0e0dba20, type: 3}
+  walkRightSprites:
+  - {fileID: -1636175773, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: 1169190052, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -885500573, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -1553756731, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -288638117, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -95526671, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -722541957, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  - {fileID: -1119818951, guid: c07f1dc89c0860c4499ccab668e1a24a, type: 3}
+  deathExolosionSprites:
+  - {fileID: -2003505483, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1721986559, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1060592388, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: -1733611459, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}
+  - {fileID: 6483895, guid: c4b4f17e9addd1447b5d3a9e239db8ba, type: 3}

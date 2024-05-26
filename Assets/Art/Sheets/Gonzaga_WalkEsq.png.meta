@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d84e6275ea578046aca84a6d060064d
+guid: ec9cace8d5097fb4aa2db467b3adcf3e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emo2_Idle_0
+      name: Gonzaga_WalkEsq_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 551
-        width: 210
-        height: 448
+        x: 9
+        y: 1523
+        width: 290
+        height: 504
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5606c994200f52f41bfc7065bdda0dbc
-      internalID: 1446218789
+      spriteID: e73909223271e874a80eed2e324036c3
+      internalID: -322953300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_1
+      name: Gonzaga_WalkEsq_1
       rect:
         serializedVersion: 2
-        x: 263
-        y: 553
-        width: 239
-        height: 448
-      alignment: 9
-      pivot: {x: 0.56, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d307743e922dcb346b62f554a59b6be7
-      internalID: -1772746796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_2
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 553
-        width: 222
-        height: 448
+        x: 321
+        y: 1546
+        width: 316
+        height: 485
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3dedb3e49daf2469b03dd5114028e7
-      internalID: 1672148104
+      spriteID: 5c579ef1eaa87744ebb743c0c2dbe731
+      internalID: -1466465771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_3
+      name: Gonzaga_WalkEsq_2
       rect:
         serializedVersion: 2
-        x: 828
-        y: 553
-        width: 201
-        height: 438
+        x: 667
+        y: 1513
+        width: 324
+        height: 513
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fd5e848a58589d40af33b55864056af
-      internalID: -1674388239
+      spriteID: b149f7c1f1126424eb9ec3dd99b54f7b
+      internalID: -2067585793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_4
+      name: Gonzaga_WalkEsq_3
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 553
-        width: 215
-        height: 436
+        x: 1035
+        y: 1509
+        width: 307
+        height: 519
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2823c31b2a2be24f9678755ad080f86
-      internalID: 830402644
+      spriteID: 8cff156f06bde3d41968f9605a733792
+      internalID: 821869760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_5
+      name: Gonzaga_WalkEsq_4
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 553
-        width: 234
-        height: 438
+        x: 1390
+        y: 1528
+        width: 290
+        height: 513
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,41 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ade9edcd3dce4848a1b7043a0a8c8bd
-      internalID: -834539057
+      spriteID: a92b7204a8af8964799970197cc791ef
+      internalID: -479687324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_6
+      name: Gonzaga_WalkEsq_5
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 553
-        width: 259
-        height: 438
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb319f04cbb257e4bb75b21ddcf52673
-      internalID: 45959125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 81
-        width: 228
-        height: 450
+        x: 1697
+        y: 1535
+        width: 297
+        height: 500
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,8 +255,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c432eb0c6d2964295bee8f6c6d56bb
-      internalID: 2138593644
+      spriteID: 3d14dfee52fac754091d2a9e186b8ea4
+      internalID: -201180493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_WalkEsq_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 969
+        width: 285
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab30399c1fb8edd4a9c361614e49e8dc
+      internalID: 1179717885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_WalkEsq_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 958
+        width: 266
+        height: 509
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc217ed3fb849554998055cc5005599e
+      internalID: -351892733
       vertices: []
       indices: 
       edges: []
@@ -306,7 +306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eac00b0ad55a1d449928f697f71d8bc5
+    spriteID: abc64c97e1e98d6408a66cbd7f816725
     internalID: 0
     vertices: []
     indices: 
@@ -314,14 +314,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Emo2_Idle_0: 1446218789
-      Emo2_Idle_1: -1772746796
-      Emo2_Idle_2: 1672148104
-      Emo2_Idle_3: -1674388239
-      Emo2_Idle_4: 830402644
-      Emo2_Idle_5: -834539057
-      Emo2_Idle_6: 45959125
-      Emo2_Idle_7: 2138593644
+      Gonzaga_WalkEsq_0: -322953300
+      Gonzaga_WalkEsq_1: -1466465771
+      Gonzaga_WalkEsq_2: -2067585793
+      Gonzaga_WalkEsq_3: 821869760
+      Gonzaga_WalkEsq_4: -479687324
+      Gonzaga_WalkEsq_5: -201180493
+      Gonzaga_WalkEsq_6: 1179717885
+      Gonzaga_WalkEsq_7: 1022774021
+      Gonzaga_WalkEsq_8: -351892733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

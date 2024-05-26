@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d84e6275ea578046aca84a6d060064d
+guid: ebc76f0438567904d854610f0e0dba20
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emo2_Idle_0
+      name: Emo2_WalkEsq_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 551
-        width: 210
-        height: 448
+        x: 151
+        y: 2859
+        width: 300
+        height: 500
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5606c994200f52f41bfc7065bdda0dbc
-      internalID: 1446218789
+      spriteID: 37a03f0a67a64474c931de2df2e4109a
+      internalID: -1658996142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_1
+      name: Emo2_WalkEsq_1
       rect:
         serializedVersion: 2
-        x: 263
-        y: 553
-        width: 239
-        height: 448
-      alignment: 9
-      pivot: {x: 0.56, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d307743e922dcb346b62f554a59b6be7
-      internalID: -1772746796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_2
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 553
-        width: 222
-        height: 448
+        x: 959
+        y: 2859
+        width: 302
+        height: 496
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3dedb3e49daf2469b03dd5114028e7
-      internalID: 1672148104
+      spriteID: 288ef153c8220dd438a9591029395f2c
+      internalID: -2103334421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_3
+      name: Emo2_WalkEsq_2
       rect:
         serializedVersion: 2
-        x: 828
-        y: 553
-        width: 201
-        height: 438
+        x: 1767
+        y: 2857
+        width: 270
+        height: 508
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fd5e848a58589d40af33b55864056af
-      internalID: -1674388239
+      spriteID: 66e5077dc5375004cb929f625574e89b
+      internalID: -1120811093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_4
+      name: Emo2_WalkEsq_3
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 553
-        width: 215
-        height: 436
+        x: 2585
+        y: 2857
+        width: 232
+        height: 538
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2823c31b2a2be24f9678755ad080f86
-      internalID: 830402644
+      spriteID: 89146b6efde3a8542aba9490372878b7
+      internalID: -555174218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_5
+      name: Emo2_WalkEsq_4
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 553
-        width: 234
-        height: 438
+        x: 3375
+        y: 2861
+        width: 318
+        height: 486
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,41 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ade9edcd3dce4848a1b7043a0a8c8bd
-      internalID: -834539057
+      spriteID: 6648afc1a6157eb4ca5cf8ddaa3b537e
+      internalID: 2128620626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_6
+      name: Emo2_WalkEsq_5
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 553
-        width: 259
-        height: 438
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb319f04cbb257e4bb75b21ddcf52673
-      internalID: 45959125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 81
-        width: 228
-        height: 450
+        x: 151
+        y: 1563
+        width: 276
+        height: 508
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,8 +255,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c432eb0c6d2964295bee8f6c6d56bb
-      internalID: 2138593644
+      spriteID: fb5bcdcde6b339b42a7b2c5edd0947c0
+      internalID: -873621118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emo2_WalkEsq_6
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1565
+        width: 260
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0155f3cf870414db15e8e888823de1
+      internalID: 1867652497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emo2_WalkEsq_7
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1563
+        width: 268
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaab513a4205bb48856277246b93d2d
+      internalID: 1196469997
       vertices: []
       indices: 
       edges: []
@@ -306,7 +306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eac00b0ad55a1d449928f697f71d8bc5
+    spriteID: 81510a632ca092c429b9a6bb9c13bc8f
     internalID: 0
     vertices: []
     indices: 
@@ -314,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Emo2_Idle_0: 1446218789
-      Emo2_Idle_1: -1772746796
-      Emo2_Idle_2: 1672148104
-      Emo2_Idle_3: -1674388239
-      Emo2_Idle_4: 830402644
-      Emo2_Idle_5: -834539057
-      Emo2_Idle_6: 45959125
-      Emo2_Idle_7: 2138593644
+      Emo2_WalkEsq_0: -1658996142
+      Emo2_WalkEsq_1: -2103334421
+      Emo2_WalkEsq_2: -1120811093
+      Emo2_WalkEsq_3: -555174218
+      Emo2_WalkEsq_4: 2128620626
+      Emo2_WalkEsq_5: -873621118
+      Emo2_WalkEsq_6: 1867652497
+      Emo2_WalkEsq_7: 1196469997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

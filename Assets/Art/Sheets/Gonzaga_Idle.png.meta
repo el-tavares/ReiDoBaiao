@@ -1,0 +1,814 @@
+fileFormatVersion: 2
+guid: 82d475ed5c1229a4195a591290b6dace
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gonzaga_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1507
+        width: 267
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f890ee1a82595df40a5bba771561fee4
+      internalID: -1421419182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1511
+        width: 278
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2ed05640969c34a87ec70b5565c56d
+      internalID: 803229569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1515
+        width: 288
+        height: 520
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68890004aef1a26489e4eada3aad2bcf
+      internalID: 1062729855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1521
+        width: 297
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df374ecb6e1f704cbc607aff5aa721c
+      internalID: 1560215549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 1501
+        width: 303
+        height: 508
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312a5579e2556974e84d9b011c560310
+      internalID: 718987854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1501
+        width: 310
+        height: 509
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a92c8631c9e1a346883e7b3a30fc977
+      internalID: 729081224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 1505
+        width: 313
+        height: 506
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ed08ce8d4883846818016f7e1e37e8
+      internalID: 149123265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1507
+        width: 319
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e900deed525f8cb499213baea205f358
+      internalID: 1721793644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1509
+        width: 322
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ce7899a76b9a248868ef84bbae474b
+      internalID: 1155645879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1495
+        width: 321
+        height: 494
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a481c8bd12130148a114fc5a5eb7539
+      internalID: 27723117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1493
+        width: 317
+        height: 496
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8962d1b33b0abc4d8edc78aa3f904c6
+      internalID: 1321230007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 929
+        width: 310
+        height: 498
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fbcd93f7bc34140aed3a6fc5939d87
+      internalID: -1731147639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 925
+        width: 309
+        height: 502
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76726904873aac34aa913c6f5262e236
+      internalID: -1852270132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 923
+        width: 304
+        height: 502
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d879eefe9f1252c4fb9e3723e3e2c4ee
+      internalID: -413214115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 939
+        width: 309
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b44aed6bd18f644a84db34cdbf8daf8
+      internalID: 374231599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 937
+        width: 299
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38df24a97c55f3347bedeba56dbdcf2b
+      internalID: -476380995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 933
+        width: 284
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce97e86bed82ffd4fb1d399a53ca2a59
+      internalID: 2005057268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 931
+        width: 276
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5558f174bb3409940852203fe841b696
+      internalID: 293889268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 927
+        width: 286
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0512673185c6348a78ef68fc8452da
+      internalID: -971899213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 949
+        width: 280
+        height: 524
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3da4a6c7e033a42bc0d721c3308b29
+      internalID: -111725937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 945
+        width: 284
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caa63edb5c511546b28463369b06491
+      internalID: 73422052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 941
+        width: 290
+        height: 520
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb885db589af3409ec9da5dab75d9f
+      internalID: -1426224644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 367
+        width: 300
+        height: 520
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac729c213e41e024c8b10fb13573d4b9
+      internalID: 2021227134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 363
+        width: 310
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c71634681a646340ad096346f07a30a
+      internalID: -1585045033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 389
+        width: 328
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1c60108ef8cfb47adc1aa3a498f2b5
+      internalID: 695681750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 385
+        width: 318
+        height: 518
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4f700b7bb0d3b4495bf0b7bf7c5d1e
+      internalID: 194843135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 381
+        width: 310
+        height: 518
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e198b3bd73cdc5143996dc6a5397cabb
+      internalID: -684682205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 379
+        width: 300
+        height: 520
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d2572832827724f92e104b0dde13b1
+      internalID: -367889869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 375
+        width: 292
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0ef081003738847840b4b2e29f5358
+      internalID: 1254370499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gonzaga_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 387
+        width: 276
+        height: 524
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc978055ced4a846906e8155ff61574
+      internalID: 620807317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fc00c6e67ef8108408728426e03357bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gonzaga_Idle_0: -1421419182
+      Gonzaga_Idle_1: 803229569
+      Gonzaga_Idle_10: 1321230007
+      Gonzaga_Idle_11: -1731147639
+      Gonzaga_Idle_12: -1852270132
+      Gonzaga_Idle_13: -413214115
+      Gonzaga_Idle_14: 374231599
+      Gonzaga_Idle_15: -476380995
+      Gonzaga_Idle_16: 2005057268
+      Gonzaga_Idle_17: 293889268
+      Gonzaga_Idle_18: -971899213
+      Gonzaga_Idle_19: -111725937
+      Gonzaga_Idle_2: 1062729855
+      Gonzaga_Idle_20: 73422052
+      Gonzaga_Idle_21: -1426224644
+      Gonzaga_Idle_22: 2021227134
+      Gonzaga_Idle_23: -1585045033
+      Gonzaga_Idle_24: -144677188
+      Gonzaga_Idle_25: 695681750
+      Gonzaga_Idle_26: 194843135
+      Gonzaga_Idle_27: -684682205
+      Gonzaga_Idle_28: -367889869
+      Gonzaga_Idle_29: 1254370499
+      Gonzaga_Idle_3: 1560215549
+      Gonzaga_Idle_30: 620807317
+      Gonzaga_Idle_4: 718987854
+      Gonzaga_Idle_5: 729081224
+      Gonzaga_Idle_6: 149123265
+      Gonzaga_Idle_7: 1721793644
+      Gonzaga_Idle_8: 1155645879
+      Gonzaga_Idle_9: 27723117
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

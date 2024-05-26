@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d84e6275ea578046aca84a6d060064d
+guid: c07f1dc89c0860c4499ccab668e1a24a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emo2_Idle_0
+      name: Emo2_WalkDir_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 551
-        width: 210
-        height: 448
+        x: 213
+        y: 2859
+        width: 300
+        height: 502
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,41 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5606c994200f52f41bfc7065bdda0dbc
-      internalID: 1446218789
+      spriteID: f1d0b80f2c5ae5d48a8088112d0a28aa
+      internalID: -1636175773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_1
+      name: Emo2_WalkDir_1
       rect:
         serializedVersion: 2
-        x: 263
-        y: 553
-        width: 239
-        height: 448
-      alignment: 9
-      pivot: {x: 0.56, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d307743e922dcb346b62f554a59b6be7
-      internalID: -1772746796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_2
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 553
-        width: 222
-        height: 448
+        x: 1189
+        y: 2859
+        width: 302
+        height: 496
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3dedb3e49daf2469b03dd5114028e7
-      internalID: 1672148104
+      spriteID: 16ee2231e89589a42800a5ff5e704c78
+      internalID: 1169190052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_3
+      name: Emo2_WalkDir_2
       rect:
         serializedVersion: 2
-        x: 828
-        y: 553
-        width: 201
-        height: 438
+        x: 2201
+        y: 2857
+        width: 268
+        height: 510
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fd5e848a58589d40af33b55864056af
-      internalID: -1674388239
+      spriteID: ecbee01199a32fa4fa6d5e8dff7e7e03
+      internalID: -885500573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_4
+      name: Emo2_WalkDir_3
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 553
-        width: 215
-        height: 436
+        x: 3205
+        y: 2859
+        width: 232
+        height: 536
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2823c31b2a2be24f9678755ad080f86
-      internalID: 830402644
+      spriteID: 56180fc184987d24ea7b6309af6abaa0
+      internalID: -1553756731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_5
+      name: Emo2_WalkDir_4
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 553
-        width: 234
-        height: 438
+        x: 205
+        y: 1566
+        width: 320
+        height: 487
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,41 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ade9edcd3dce4848a1b7043a0a8c8bd
-      internalID: -834539057
+      spriteID: 8a847d0125c1757459fb21ea0019e56d
+      internalID: -288638117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo2_Idle_6
+      name: Emo2_WalkDir_5
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 553
-        width: 259
-        height: 438
-      alignment: 9
-      pivot: {x: 0.53, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb319f04cbb257e4bb75b21ddcf52673
-      internalID: 45959125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emo2_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 81
-        width: 228
-        height: 450
+        x: 1214
+        y: 1559
+        width: 277
+        height: 510
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,8 +255,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c432eb0c6d2964295bee8f6c6d56bb
-      internalID: 2138593644
+      spriteID: 982e95ef41736004bbef2741f2ca864c
+      internalID: -95526671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emo2_WalkDir_6
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 1563
+        width: 260
+        height: 504
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8575a72f0070c44d9ee18ac3e177b2b
+      internalID: -722541957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emo2_WalkDir_7
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 1561
+        width: 270
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117fe8fc25869204ca96f17ea9c26ff0
+      internalID: -1119818951
       vertices: []
       indices: 
       edges: []
@@ -306,7 +306,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eac00b0ad55a1d449928f697f71d8bc5
+    spriteID: d5c73a8dd4472284fa793159137a25db
     internalID: 0
     vertices: []
     indices: 
@@ -314,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Emo2_Idle_0: 1446218789
-      Emo2_Idle_1: -1772746796
-      Emo2_Idle_2: 1672148104
-      Emo2_Idle_3: -1674388239
-      Emo2_Idle_4: 830402644
-      Emo2_Idle_5: -834539057
-      Emo2_Idle_6: 45959125
-      Emo2_Idle_7: 2138593644
+      Emo2_WalkDir_0: -1636175773
+      Emo2_WalkDir_1: 1169190052
+      Emo2_WalkDir_2: -885500573
+      Emo2_WalkDir_3: -1553756731
+      Emo2_WalkDir_4: -288638117
+      Emo2_WalkDir_5: -95526671
+      Emo2_WalkDir_6: -722541957
+      Emo2_WalkDir_7: -1119818951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

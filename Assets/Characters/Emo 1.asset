@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f3be32db6c3e9c44b25f4022968baa5, type: 3}
-  m_Name: Emo
+  m_Name: Emo 1
   m_EditorClassIdentifier: 
   idleSprites:
   - {fileID: -484653799, guid: 1bce3ac8bba4b02429628853f34d1e4a, type: 3}
