@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     private void DecreaseEmoCount()
     {
         emoCount--;
-        if (emoCount == 0 ) { EndGame(false); }
+        if (emoCount == 0 ) { Invoke("GoodEnd", 1.5f); }
     }
+
+    private void GoodEnd() { EndGame(false); }
 }

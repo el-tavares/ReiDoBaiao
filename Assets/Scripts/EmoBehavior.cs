@@ -11,6 +11,7 @@ public class EmoBehavior : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private SoundboxBehavior soundbox;
     [SerializeField] private int groupIndex;
+    [SerializeField] private GameObject morteAudio;
 
     private NavMeshAgent agent;
     private float fleeDistance;
@@ -96,11 +97,16 @@ public class EmoBehavior : MonoBehaviour
             Debug.Log($"Emo do grupo {this.groupIndex} fugindo. Caixa de som: {soundbox.interactedIndex}");
             bFleeing = true;
             fleeDistance = hitCount;
+            soundbox.ChangeAudioVolume(-0.07f);
+
             if (hitCount > 4) 
             {
+                morteAudio.SetActive(true);
+                soundbox.ChangeAudioVolume(-1f);
                 OnEmoExplosion?.Invoke();
                 characterMovement.SetDead(); 
             }
+
             StartCoroutine(FleeFromPlayer());
         }
     }

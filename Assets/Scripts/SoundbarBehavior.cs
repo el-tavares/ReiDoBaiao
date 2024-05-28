@@ -12,6 +12,8 @@ public class SoundbarBehavior : MonoBehaviour
     [SerializeField] private Scrollbar handlebar;
     [SerializeField] private Scrollbar hitbar;
     [SerializeField] private float speed = 1f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private GameObject grito;
 
     private float direction = 1f;
     private bool bPressing;
@@ -19,9 +21,12 @@ public class SoundbarBehavior : MonoBehaviour
     private bool bOpenInput = true;
     private int hitCount;
 
+
     private void Start()
     {
         hitbar.value = UnityEngine.Random.Range(0f, 1f);    // Escolhe posicao randomica do hitbar
+
+        //audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -42,9 +47,12 @@ public class SoundbarBehavior : MonoBehaviour
         if (hitCount > 4) 
         {
             Debug.Log("Emos expulsos");
-            minigame.SetActive(false);
+            grito.SetActive(true);
             hitCount = 0;
             bOpenInput = true;
+            audioSource.volume = .3f;
+            minigame.SetActive(false);
+            Invoke("DisableGrito", 1f);
         }
     }
 
@@ -56,6 +64,7 @@ public class SoundbarBehavior : MonoBehaviour
             {   
                 hitCount++;
                 OnHit?.Invoke(hitCount);
+                audioSource.volume += .2f;
 
                 hitbar.value = UnityEngine.Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
                 bOpenInput = false;                         // Fecha disponibilidade
@@ -68,4 +77,6 @@ public class SoundbarBehavior : MonoBehaviour
     {
         if (bWasHit) { bWasHit = false; }     // Reinicia hit como nao acertado    
     }
+
+    private void DisableGrito() { grito.SetActive(false); }
 }

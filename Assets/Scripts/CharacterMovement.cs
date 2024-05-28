@@ -10,12 +10,16 @@ public class CharacterMovement : MonoBehaviour
 
     private NavMeshAgent agent;
     private bool bDead;
+    private AudioSource audioSource;
 
     private void Start()
     {
         // Defini agent e desabilita rotacao
         agent = GetComponent<NavMeshAgent>();
         if (agent != null) { agent.updateRotation = false; }
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource != null) { audioSource.Play(); }
 
         StartCoroutine(PlayAnimation());
     }
@@ -36,6 +40,8 @@ public class CharacterMovement : MonoBehaviour
             currentFrame = (currentFrame + 1) % currentAnimation.Length;
 
             yield return new WaitForSeconds(animationRate);
+
+            HandleSound();
         }
     }
 
@@ -45,6 +51,13 @@ public class CharacterMovement : MonoBehaviour
         if (agent.velocity.x > 0 || agent.velocity.z < 0) { return characterObject.walkRightSprites; }
         else if (agent.velocity.x < 0 || agent.velocity.z > 0) { return characterObject.walkLeftSprites; }
         else { return characterObject.idleSprites; }
+    }
+
+    private void HandleSound()
+    {
+        audioSource.pitch = Random.Range(.5f, 1.5f);
+        if (agent.velocity != Vector3.zero) { audioSource.volume = Random.Range(.5f, 1f); }
+        else { audioSource.volume = 0f; }
     }
 
     private void OnDisable()
