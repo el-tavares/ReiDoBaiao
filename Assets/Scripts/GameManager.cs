@@ -14,10 +14,10 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Total de emos: {emoCount}");
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyUp(KeyCode.G)) { EndGame(false); }
-    }
+    }*/
 
     private void OnEnable()
     {
