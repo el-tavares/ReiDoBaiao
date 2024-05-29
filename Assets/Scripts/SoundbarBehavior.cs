@@ -14,6 +14,7 @@ public class SoundbarBehavior : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject grito;
+    [SerializeField] private GameObject star;
 
     private float direction = 1f;
     private bool bPressing;
@@ -65,6 +66,7 @@ public class SoundbarBehavior : MonoBehaviour
                 hitCount++;
                 OnHit?.Invoke(hitCount);
                 audioSource.volume += .2f;
+                star.SetActive(true);
 
                 hitbar.value = UnityEngine.Random.Range(0f, 1f);        // Escolhe posicao randomica do hitbar
                 bOpenInput = false;                         // Fecha disponibilidade

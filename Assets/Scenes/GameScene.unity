@@ -1345,81 +1345,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1310072360384423580, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458828340322409233, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2251913211920080907, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
       propertyPath: m_Name
       value: Gonzaga
-      objectReference: {fileID: 0}
-    - target: {fileID: 2835587983350906568, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2835587983350906568, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2835587983350906568, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3334906321621980531, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3334906321621980531, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.519
-      objectReference: {fileID: 0}
-    - target: {fileID: 5227177711808254400, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.319
-      objectReference: {fileID: 0}
-    - target: {fileID: 5227177711808254400, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5227177711808254400, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.453
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698036046897148102, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 0.18280526
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698036046897148102, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 0.18280526
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698036046897148102, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 0.49056602
-      objectReference: {fileID: 0}
-    - target: {fileID: 8276117978024957086, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Color.b
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8276117978024957086, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9684531
-      objectReference: {fileID: 0}
-    - target: {fileID: 8276117978024957086, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515518116212942490, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8667661794230683031, guid: c24666e3eb0079144a45445e2bebe0e2, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
