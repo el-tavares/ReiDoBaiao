@@ -23,12 +23,14 @@ public class GameManager : MonoBehaviour
     {
         TimerBehavior.OnTimeEnded += EndGame;
         EmoBehavior.OnEmoExplosion += DecreaseEmoCount;
+        BodeBehavior.OnBodeHit += EndGame;
     }
 
     private void OnDisable()
     {
         TimerBehavior.OnTimeEnded -= EndGame;
         EmoBehavior.OnEmoExplosion -= DecreaseEmoCount;
+        BodeBehavior.OnBodeHit -= EndGame;
     }
 
     private void EndGame(bool badEnd)
