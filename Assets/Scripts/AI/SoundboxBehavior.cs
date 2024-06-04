@@ -26,7 +26,7 @@ public class SoundboxBehavior : MonoBehaviour, IInteractable
 
         GetComponent<SphereCollider>().enabled = false;    
         
-        if (index == 1)
+        if (index == 1 && tutorial != null)
         {
             tutorial.gameObject.SetActive(true);
             Invoke("DisableTutorial", 2);
