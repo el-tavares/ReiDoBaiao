@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [Header("End menu only")]
     [SerializeField] private Sprite[] endSprites;
     [SerializeField] private Image endImage;
 

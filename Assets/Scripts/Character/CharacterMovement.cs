@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] CharacterObject characterObject;
     [SerializeField] float animationRate = .1f;
+    [SerializeField] float maxAudioVolume = 1f;
 
     private NavMeshAgent agent;
     private bool bDead;
@@ -56,7 +57,7 @@ public class CharacterMovement : MonoBehaviour
     private void HandleSound()
     {
         audioSource.pitch = Random.Range(.5f, 1.5f);
-        if (agent.velocity != Vector3.zero) { audioSource.volume = Random.Range(.5f, 1f); }
+        if (agent.velocity != Vector3.zero) { audioSource.volume = Random.Range(maxAudioVolume - .5f, maxAudioVolume); }
         else { audioSource.volume = 0f; }
     }
 
