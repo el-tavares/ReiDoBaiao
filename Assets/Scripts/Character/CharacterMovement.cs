@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float maxAudioVolume = 1f;
 
     private NavMeshAgent agent;
-    private bool bDead;
+    private bool bDead, bPlayAnimation = true;
     private AudioSource audioSource;
 
     private void Start()
@@ -25,13 +25,13 @@ public class CharacterMovement : MonoBehaviour
         StartCoroutine(PlayAnimation());
     }
 
-    IEnumerator PlayAnimation()
+    private IEnumerator PlayAnimation()
     {
         Sprite[] currentAnimation = GetCurrentAnimation();
         int currentFrame = 0;
 
         // Atualiza o frame da animacao enquanto checa a animacao
-        while (true)
+        while (bPlayAnimation)
         {
             this.GetComponentInChildren<SpriteRenderer>().sprite = currentAnimation[currentFrame];
 
@@ -42,7 +42,7 @@ public class CharacterMovement : MonoBehaviour
 
             yield return new WaitForSeconds(animationRate);
 
-            HandleSound();
+            HandleSound(false);
         }
     }
 
@@ -54,11 +54,29 @@ public class CharacterMovement : MonoBehaviour
         else { return characterObject.idleSprites; }
     }
 
-    private void HandleSound()
+    private void HandleSound(bool forceSound)
     {
         audioSource.pitch = Random.Range(.5f, 1.5f);
-        if (agent.velocity != Vector3.zero) { audioSource.volume = Random.Range(maxAudioVolume - .5f, maxAudioVolume); }
+        if (agent.velocity != Vector3.zero || forceSound) { audioSource.volume = Random.Range(maxAudioVolume - .5f, maxAudioVolume); }
         else { audioSource.volume = 0f; }
+    }
+
+    public void StartSpecialAnimation() { StartCoroutine(PlaySpecialAnimation()); }
+
+    private IEnumerator PlaySpecialAnimation()
+    {
+        bPlayAnimation = false;
+        Sprite[] specialAnimation = characterObject.specialSprites;
+
+        for (int i = 0; i < specialAnimation.Length; i++)
+        {
+            this.GetComponentInChildren<SpriteRenderer>().sprite = specialAnimation[i];
+            yield return new WaitForSeconds(animationRate);
+            HandleSound(true);
+        }
+
+        bPlayAnimation = true;
+        StartCoroutine(PlayAnimation());
     }
 
     private void OnDisable()

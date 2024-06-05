@@ -39,7 +39,7 @@ public class BodeBehavior : MonoBehaviour
 
     private IEnumerator ChasePlayer()
     {
-        // TOCA ANIMACAO DE PREPARACAO
+        GetComponent<CharacterMovement>().StartSpecialAnimation();
 
         yield return new WaitForSeconds(setupTime);
         Vector3 playerDirectionOffset = (playerTransform.position - transform.position).normalized * 2f;

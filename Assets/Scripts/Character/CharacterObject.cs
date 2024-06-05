@@ -9,4 +9,5 @@ public class CharacterObject : ScriptableObject
     public Sprite[] walkLeftSprites;
     public Sprite[] walkRightSprites;
     public Sprite[] deathExolosionSprites;
+    public Sprite[] specialSprites;
 }

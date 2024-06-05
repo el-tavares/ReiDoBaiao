@@ -981,6 +981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterObject: {fileID: 11400000, guid: 1b2c16f2171110a459bf3ce3ac2aebb0, type: 2}
   animationRate: 0.1
+  maxAudioVolume: 1
 --- !u!195 &543790904
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2084,8 +2085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87b7143c9a9a2e4b8e6037b4aeeb5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterObject: {fileID: 11400000, guid: 2198b6cb102a0bf4aab6d101c69087d6, type: 2}
+  characterObject: {fileID: 11400000, guid: 77bfb1dcadefc41479f9a72f7b062283, type: 2}
   animationRate: 0.1
+  maxAudioVolume: 1
 --- !u!195 &1458702983
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2292,6 +2294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterObject: {fileID: 11400000, guid: 2198b6cb102a0bf4aab6d101c69087d6, type: 2}
   animationRate: 0.1
+  maxAudioVolume: 1
 --- !u!195 &1642773152
 NavMeshAgent:
   m_ObjectHideFlags: 0

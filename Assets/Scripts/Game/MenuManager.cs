@@ -25,4 +25,13 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public static void QuitGame()
+    {
+        Application.Quit();
+
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
 }
