@@ -1,3 +1,3 @@
-# Rei do Baião!
+# Rei do Baião
 
-Projeto realizado por: Mateus Cunha (Líder e UI designer), Emmanuel (Programador e Level Designer), João Felipe (Artista 2D e Level Designer), Kauã Pablo (Artista 3D) e Maria Vitória (Artista 3D)
+Projeto desenvolvido por: Mateus Cunha (UI, Game Design e Animação 2D), Emmanuel Tavares (Programação), João Felipe (Artes em 2D), Maria Vitória (Personagens 2D e Modelagem 3D) e Kauã Silva (Modelagem 3D); para a competência de Desenvolver Jogos Digitais Utilizando Recursos Avançados em Motores Gráficos 3D, administrada pelo professor Armando Agra, na Unifacisa.
